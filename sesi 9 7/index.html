@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+        <title></title>
+    </head>
+    <body>
+        <form style="width: 90%; padding-left: 5%;">
+            <h1 style="text-align: center;">WEB PROJECT - TWEET</h1>
+            <div class="form-group">
+                User Name : <br>
+                <input type="text" class="form-control" id="txtUserName">
+                Password : <br>
+                <input type="password" class="form-control" id="txtPassword">
+                Decrypt Password : <br>
+                <input type="password" class="form-control" id="txtDecryptPassword">
+            </div>
+            <button type="Submit" class="btn btn-primary" onclick="onSubmit(event)" >Submit</button>
+            <button type="Submit" class="btn btn-primary" onclick="Decrypt(event)" >Decrypt</button>
+        </form>
+        <div style="text-align: justify;">
+            <ul id = "hasil"></ul>
+        </div>
+    </body>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</html>
